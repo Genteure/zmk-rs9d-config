@@ -21,9 +21,16 @@
 include:
   - board: nice_nano//zmk
     shield: sofle_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+
   - board: nice_nano//zmk
     shield: sofle_right
+
+  - board: xiao_ble//zmk
+    shield: sofle_dongle prospector_adapter
+
   - board: nice_nano//zmk
     shield: settings_reset
+
   - board: xiao_ble//zmk
-    shield: sofle2_dongle prospector_adapter
+    shield: settings_reset
